@@ -24,7 +24,8 @@ namespace ExtractText_pdfclown
             //te.Extract()
 
             PdfDocument document = new PdfDocument();
-            //document.LoadFromFile(@"C:\Users\swite\Desktop\Praktikum_po_informatike.pdf");
+            Console.WriteLine("Extract Text from PDF Test");
+            document.LoadFromFile(@"C:\Users\swite\Desktop\Praktikum_po_informatike.pdf");
             foreach (PdfPageBase page in document.Pages)
             {
                 string content = page.ExtractText();
